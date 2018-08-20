@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>DionWeb Portfolio</title>
+</head>
+
+<body id="home">
+   
+    <nav id="navbar" class="navbar">
+        <div class="logo">
+            <a href="#home">DionWeb</a>
+        </div>
+        <span class="opennav" id="opensideNav">
+            <a href="##" onclick="openSideNav()">
+                <i class="fas fa-bars fa-2x"></i>
+            </a>
+        </span>
+        <span class="closenav" id="closesideNav">
+            <a href="##" onclick="closeSideNav()">
+                <i class="fas fa-times"></i>
+            </a>
+        </span>
+        <ul class="navbar-nav">
+            <li>
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="sideNav" class="side-nav">
+        <a href="#home" onclick="closeSideNav()">
+            Home</a>
+        <a href="#about" onclick="closeSideNav()">
+            About</a>
+        <a href="#projects" onclick="closeSideNav()">
+            Projects</a>
+        <a href="#contact" onclick="closeSideNav()">
+            Contact</a>
+        </a>
+
+    </div>
+
+
+    <div id="showcase">
+        <div class="container">
+        <div class="showcase-text">
+            <h1>
+                Hello, my name is Tsentidis Dionysios!</h1>
+            <h2>Welcome to my personal portfolio! On this page you can find details about me and some of my projects.</h2>
+            <a href="#about" class="btn-outline">About me</a>
+        </div>
+        <div class="showcase-image">
+            <img src="images/portrait.jpg" alt="">
+        </div>
+    </div>
+    </div>
+
+    <section id="about">
+        <h1>About me</h1>
+        <div class="container">
+            <p>Hi, my name is Tsentidis Dionysios and i am a junior web developer. I am from Greece and I was born in Katerini
+                in 1995. I am studying Software Engineering in the department of Computer Science and Engineering in Larisa,
+                Greece. I spend the most of my free time on learning new web development tools and resources. I love "clean"
+                code, innovation and improvment.</p>
+            <br>
+            <br>
+            <p>
+                <span>Languages:</span> Greek (Native Language), Deutsch (B1, Goethe-Zertifikat), English(B2, ESB)</p>
+            <p>
+                <span>Front end:</span> HTML, CSS, Flexbox, CSS Grid, Sass, JavaScript</p>
+            <p>
+                <span>Front end frameworks:</span> Anular JS</p>
+            <p>
+                <span>CSS frameworks:</span> Bootstrap, Materialize, Semantic </p>
+            <p>
+                <span>Back end:</span> SQL, PHP, Wordpress</p>
+            <p>
+                <span>Other programming languages:</span> C</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h1>My latest Work</h1>
+        <div class="container">
+            <div class="boxes">
+                <div class="box">
+                    <div class="img">
+                        <img src="images/projects/dionweb.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h4>My personal portfolio</h4>
+                        <p>This is my personal portfolio. Created from scratch with Sass, css grids and javascript. No frameworks, just a bit jquery.</p>
+                    </div>
+                    <div class="icons hidden">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <i class="far fa-eye"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="images/projects/jolynnsmart.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h4>CV / Resume template</h4>
+                        <p>Responsive portfolio template created from scratch with Sass. No frameworks. </p>
+                    </div>
+                    <div class="icons">
+                        <ul>
+                            <li>
+                                <a target="_blank" rel="noopener noreferrer" href="https://dionysiostsentidis.github.io/CVResume_Scratch-Sass/">
+                                    <i class="far fa-eye"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/dionysiostsentidis/CVResume_Scratch-Sass">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="box">
+                    <div class="img">
+                        <img src="images/projects/carmelagoss.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h4>Landing page portfolio template</h4>
+                        <p>Responsive portfolio template created with Bootstrap 4 and Sass</p>
+                    </div>
+                    <div class="icons">
+                        <ul>
+                            <li>
+                                <a target="_blank" rel="noopener noreferrer" href="https://dionysiostsentidis.github.io/PortfolioTemplate_Bootstrap4/">
+                                    <i class="far fa-eye"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/dionysiostsentidis/PortfolioTemplate_Bootstrap4">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="box">
+                    <div class="img">
+                        <img src="images/projects/exploretheworld.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h4>Template for mobile apps</h4>
+                        <p>A responsive landing page created with Bootstrap 4 and Sass.</p>
+                    </div>
+                    <div class="icons">
+                        <ul>
+                            <li>
+                                <a target="_blank" rel="noopener noreferrer" href="https://dionysiostsentidis.github.io/AppTemplate_Bootstrap4/">
+                                    <i class="far fa-eye"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/dionysiostsentidis/AppTemplate_Bootstrap4">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="box">
+                    <div class="img">
+
+                        <img src="images/projects/oceancruises.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h4>Ocean Cruises template</h4>
+                        <p>A responsive template for an alleged company named Ocean Cruises. Created with materialize css.</p>
+                    </div>
+                    <div class="icons">
+                        <ul>
+                            <li>
+                                <a target="_blank" rel="noopener noreferrer" href="https://dionysiostsentidis.github.io/OceanCruises_MaterializeCSS/">
+                                    <i class="far fa-eye"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/dionysiostsentidis/OceanCruises_MaterializeCSS">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+    </section>
+
+    <section id="contact">
+        <h1>Contact with me</h1>
+
+        <div class="contact">
+            <div class="alert">Your message has been sent!</div>
+            <form id="contactform">
+
+                <input type="text" name="name" id="name" placeholder="Name" required>
+
+                <input type="email" name="email" id="email" placeholder="E-mail Addr" required>
+
+                <input class="full" type="text" id="subject" name="subject" placeholder="Subject">
+
+                <textarea rows="5" class="full" id="message" name="message" placeholder="Message" required></textarea>
+
+                <button class="full btn" type="submit">Send</button>
+
+            </form>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer-content">
+                <div class="footer-text">
+                        <p>Copyrights 2018 &copy;
+                                <br> Created by
+                                <span> DionWeb </span>
+                            </p>
+                </div>
+                <div class="footer-icons">
+                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/dionysiostsentidis">
+                                <i class="fab fa-github fa-2x"></i>
+                            </a>
+                </div>
+        </div>
+
+    </footer>
+
+    <div id="iemessage">
+        <h3>Really, who uses IE in 2018? This is crazy! <br> Sorry you need to update your browser. </h3>
+
+   </div>
+    <script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

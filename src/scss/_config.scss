@@ -1,0 +1,82 @@
+// COLORS
+
+$color-primary: #f8b500;
+$color-secondary: #5c636e;
+$color-dark: #393e46;
+$color-light: #f7f7f7;
+$color-green: #53d397;
+
+// BUTTONS
+
+@mixin btn-primary{
+        color: $color-light;
+        background: $color-primary;
+        border: 0;
+        text-transform: uppercase;
+        outline: none;
+        border: 1px solid $color-primary;
+        cursor: pointer;
+        border-radius: 25px;
+        font-size: 0.8em;
+        transition: $transition;
+        &:hover {
+            background: transparent;
+            color: $color-primary;
+            outline: 0;
+        }
+    }
+
+
+@mixin btn-primary-outline{
+    margin: 0;
+    text-transform: uppercase;
+    border: 0;
+    outline: none;
+    border: 2px solid $color-primary;
+    padding: 1em;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 1em;
+    width: 12em;
+    color: $color-primary;
+    background: transparent;
+    transition: $transition;
+    text-decoration: none;
+    &:hover{
+        color: $color-light;
+        background: $color-primary;
+        transition: $transition;
+    }
+}
+
+
+// BACKGROUNDS
+
+@mixin gradient-bg-primary {
+    background: -moz-linear-gradient(135deg, rgba(92, 99, 110, 1) 0%, rgba(57, 62, 70, 1) 50%, rgba(92, 99, 110, 1) 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(92, 99, 110, 1)), color-stop(50%, rgba(57, 62, 70, 1)), color-stop(100%, rgba(92, 99, 110, 1)));
+    background: -webkit-linear-gradient(135deg, rgba(92, 99, 110, 1) 0%, rgba(57, 62, 70, 1) 50%, rgba(92, 99, 110, 1) 100%);
+    background: -o-linear-gradient(135deg, rgba(92, 99, 110, 1) 0%, rgba(57, 62, 70, 1) 50%, rgba(92, 99, 110, 1) 100%);
+    background: -ms-linear-gradient(135deg, rgba(92, 99, 110, 1) 0%, rgba(57, 62, 70, 1) 50%, rgba(92, 99, 110, 1) 100%);
+    background: linear-gradient(315deg, rgba(92, 99, 110, 1) 0%, rgba(57, 62, 70, 1) 50%, rgba(92, 99, 110, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5c636e', endColorstr='#5c636e', GradientType=1);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@mixin gradient-bg-secondary {
+    background-image: linear-gradient(to right top, #393e46, #414750, #4a505a, #535964, #5c636e);
+}
+
+// MISC
+
+@mixin sectionh1{
+    margin: 0;
+    padding: 1em;
+    text-align: center;
+    font-size: 2em;
+    color: $color-primary;
+}
+
+$font: -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
+$transition: all 0.5s ease-out;

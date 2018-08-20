@@ -1,0 +1,8 @@
+{
+  "name": "dionweb_portfolio",
+  "version": "1.0.0",
+  "description": "This is my personal portfolio",
+  "main": "index.js",
+  "author": "Tsentidis Dionysios",
+  "license": "All rights reserved"
+}
