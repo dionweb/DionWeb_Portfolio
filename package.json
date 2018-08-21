@@ -3,6 +3,13 @@
   "version": "1.0.0",
   "description": "This is my personal portfolio",
   "main": "index.js",
+  "homepage": "http://www.dionweb.me",
   "author": "Tsentidis Dionysios",
-  "license": "All rights reserved"
+  "license": "All rights reserved",
+  "dependencies": {
+    "gh-pages": "^1.2.0"
+  },
+  "scripts": {
+    "deploy": "gh-pages -d src"
+  }
 }
