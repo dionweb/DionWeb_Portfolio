@@ -1,0 +1,93 @@
+// INDEX PAGE
+
+@include smallDevices{
+    body.index-page{
+        main{
+            text-align: center;
+            padding: 0 1rem;
+        }
+        h1,h2{
+            font-size: 1.5rem;
+        }
+        button{
+            margin: 0.9rem auto 0.9rem auto;
+        }
+    }
+}
+
+// ABOUT PAGE
+
+@include extraLargeDevices{
+    body.about-page main{
+        width: 80%;
+    }
+}
+
+@include largeDevices{
+    body.about-page main{
+        width: 90%;
+        .profile p{
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@include mediumDevices{
+    body.about-page .profile{
+        flex-direction: column-reverse;
+        p{
+            padding: 2rem 0 0 0;
+        }
+    }
+}
+
+// PROJECTS PAGE
+
+@include largeDevices{
+    body.projects-page main{
+        width: 90%;
+    }
+}
+
+@include smallDevices{
+    body.projects-page main{
+        width: 100%;
+        padding: 0;
+    }
+}
+
+// CONTACT PAGE
+
+@include largeDevices{
+    body.contact-page{
+        main{
+            width: 80%;
+            .other-ways{
+                -webkit-clip-path: unset;
+                clip-path: unset;
+            }
+        }    
+    }
+}
+
+@include mediumDevices{
+    body.contact-page .contact-icon{
+        font-size: 2rem !important;
+    }
+}
+
+@include smallDevices{
+    body.contact-page{
+        main{
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            .other-ways{
+                width: 90%;
+            }
+            .contact-info{
+                flex-direction: column;
+            }
+        }
+    }
+}

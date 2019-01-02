@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@import 'config';
+
+@import 'mixins';
+
+
+// INDEX PAGE
+body.index-page{
+    height: 100vh;
+    width: 100vw;
+    background: url(../images/bg.jpg);
+    background-attachment: fixed;
+    background-size: cover; 
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 100vw;
+        z-index: -1;
+        background: rgba(0, 0, 0, 0.85); 
+    }
+    main{
+        height: calc(100vh - 106.4px);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 3.5rem;
+    }
+}
+
+// ABOUT PAGE
+
+body.about-page main{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding: 1rem;
+    .profile{
+        display: flex;
+        align-items: center;
+        padding: 1.5rem 0;
+        p{
+            font-size: 1.4rem;
+            padding: 1rem;
+        }
+        .portrait{
+            flex-shrink: 0;
+            flex-grow: 1;
+            overflow: hidden;
+            width: 300px;
+            height: 293px;
+            background: url(../images/portrait1.jpg);
+            border: 2px solid $yellow;
+            margin: 1rem;
+            border-radius: 50% 20% / 10% 40%;
+            .row{
+                display: flex;
+                .portrait-box{
+                    height: 142px;
+                    min-width: 146px;
+                    border: 2px solid transparent;
+                    transition: 400ms linear;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    &:hover{
+                        background-color: $darker;
+                        .text{
+                            visibility: visible;
+                        }
+                    }
+                    .text{
+                        text-transform: uppercase;
+                        visibility: hidden;
+                        transition: $transition;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// CONTACT PAGE
+
+body.contact-page main{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding: 1rem;
+    .form{
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+        .personal-info{
+            display: flex;
+            justify-content: space-between;
+            #name, #email{
+                flex-basis: 48%;
+            }
+        }
+        input, textarea{
+            width: 100%;
+            border: 0;
+            outline: 0;
+            padding: 1rem 0;
+            margin: 1rem 0;
+            background: none;
+            color: $grey;
+            border-bottom: 0.1rem solid $grey;
+            transition: $transition;
+            font-family: $font;
+        }
+        ::placeholder{
+            color: $grey;
+        }
+        input:focus, textarea:focus{
+            border-bottom: 0.1rem solid $dark;
+        }
+        button{
+            margin: 1.5rem auto 1.5rem auto;
+        }
+    }
+    .alert{
+        display: none;
+        text-align: center;
+        padding: 1rem;
+        color: $yellow;
+        margin-bottom: 3rem;
+        font-size: 1.2rem;
+    }
+    .other-ways{
+        background-image: linear-gradient(to right bottom, #cacaca, #d8d5d7, #e7e0e0, #f4ece8, #fcfaf1);
+        min-height: 80px;
+        color: $dark;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: 1.5rem auto 1.5rem auto;
+        -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+        clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+        border-bottom: 0.3rem solid $yellow;
+    }
+    .contact-info{
+        display: flex;
+        padding: 1.5rem;
+        justify-content: space-around;
+        .box{
+            display: flex;
+            flex-direction: column;
+            font-size: 1.1rem;
+            padding: 1rem;
+            color: #cacaca;
+            border-bottom: 0.1rem solid transparent;
+            transition: $transition;
+            &:hover{
+                border-bottom: 0.1rem solid $yellow;
+            }
+            .contact-icon{
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+// PROJECTS PAGE
+
+body.projects-page main{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding: 1rem;
+    .projects{
+        padding: 1.5rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        img{
+            width: 270px;
+            height: 155px;
+        }
+        .box{
+            padding: 1.5rem;
+            margin: 1rem 0;
+            a{
+                color: $yellow;
+                &:hover{
+                    color: $white;
+                }
+            }
+            span{
+                padding: 0 0.5rem;
+            }
+        }
+    }
+}
+
+@import 'responsive';

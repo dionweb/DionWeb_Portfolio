@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+h1 {
+  margin: 0;
+  font-size: 2rem;
+  text-decoration: underline #e6b31e;
+  text-underline-position: under;
+  padding: 1.5rem;
+  font-weight: 600; }
+
+h2 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: normal;
+  padding: 0.7rem; }
+
+h4, h5 {
+  margin: 0;
+  padding: 1rem 0.5rem 0 0.5rem; }
+
+p {
+  margin: 0;
+  padding: 1.5rem; }
+
+a {
+  text-decoration: none;
+  color: #fcfaf1; }
+
+span {
+  color: #e6b31e; }
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #fcfaf1;
+  background-color: #262626; }
+
+button {
+  cursor: pointer;
+  outline: 0;
+  background: none;
+  color: #e6b31e;
+  border: 0.1rem solid #e6b31e;
+  border-radius: 7px;
+  width: 200px;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  transition: 400ms linear;
+  font-size: 1rem;
+  padding: 0.7rem 0;
+  margin: 0.7rem; }
+  button:hover {
+    background: #e6b31e;
+    color: #fcfaf1; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3.5rem;
+  font-size: 1.5rem; }
+  header .navBtn {
+    z-index: 1; }
+    header .navBtn a {
+      font-size: 2rem;
+      transition: 400ms linear; }
+      header .navBtn a:hover {
+        color: #e6b31e; }
+  header #closesideNav {
+    display: none; }
+
+.side-nav {
+  width: 0;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  background: rgba(54, 54, 54, 0.96);
+  transition: 400ms linear;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .side-nav a {
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    transition: 400ms linear;
+    text-transform: uppercase;
+    font-weight: 800; }
+    .side-nav a:hover {
+      color: #e6b31e;
+      letter-spacing: 0.2rem; }
+  .side-nav .active {
+    color: #e6b31e; }
+
+footer {
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 1.5rem;
+  margin: 0;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+body.index-page {
+  height: 100vh;
+  width: 100vw;
+  background: url(../images/bg.jpg);
+  background-attachment: fixed;
+  background-size: cover; }
+  body.index-page:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.85); }
+  body.index-page main {
+    height: calc(100vh - 106.4px);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 3.5rem; }
+
+body.about-page main {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  padding: 1rem; }
+  body.about-page main .profile {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 0; }
+    body.about-page main .profile p {
+      font-size: 1.4rem;
+      padding: 1rem; }
+    body.about-page main .profile .portrait {
+      flex-shrink: 0;
+      flex-grow: 1;
+      overflow: hidden;
+      width: 300px;
+      height: 293px;
+      background: url(../images/portrait1.jpg);
+      border: 2px solid #e6b31e;
+      margin: 1rem;
+      border-radius: 50% 20% / 10% 40%; }
+      body.about-page main .profile .portrait .row {
+        display: flex; }
+        body.about-page main .profile .portrait .row .portrait-box {
+          height: 142px;
+          min-width: 146px;
+          border: 2px solid transparent;
+          transition: 400ms linear;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          body.about-page main .profile .portrait .row .portrait-box:hover {
+            background-color: #262626; }
+            body.about-page main .profile .portrait .row .portrait-box:hover .text {
+              visibility: visible; }
+          body.about-page main .profile .portrait .row .portrait-box .text {
+            text-transform: uppercase;
+            visibility: hidden;
+            transition: 400ms linear;
+            font-size: 1.2rem; }
+
+body.contact-page main {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  padding: 1rem; }
+  body.contact-page main .form {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem; }
+    body.contact-page main .form .personal-info {
+      display: flex;
+      justify-content: space-between; }
+      body.contact-page main .form .personal-info #name, body.contact-page main .form .personal-info #email {
+        flex-basis: 48%; }
+    body.contact-page main .form input, body.contact-page main .form textarea {
+      width: 100%;
+      border: 0;
+      outline: 0;
+      padding: 1rem 0;
+      margin: 1rem 0;
+      background: none;
+      color: #cacaca;
+      border-bottom: 0.1rem solid #cacaca;
+      transition: 400ms linear;
+      font-family: "Roboto", sans-serif; }
+    body.contact-page main .form ::placeholder {
+      color: #cacaca; }
+    body.contact-page main .form input:focus, body.contact-page main .form textarea:focus {
+      border-bottom: 0.1rem solid #343434; }
+    body.contact-page main .form button {
+      margin: 1.5rem auto 1.5rem auto; }
+  body.contact-page main .alert {
+    display: none;
+    text-align: center;
+    padding: 1rem;
+    color: #e6b31e;
+    margin-bottom: 3rem;
+    font-size: 1.2rem; }
+  body.contact-page main .other-ways {
+    background-image: linear-gradient(to right bottom, #cacaca, #d8d5d7, #e7e0e0, #f4ece8, #fcfaf1);
+    min-height: 80px;
+    color: #343434;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 1.5rem auto 1.5rem auto;
+    -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+    border-bottom: 0.3rem solid #e6b31e; }
+  body.contact-page main .contact-info {
+    display: flex;
+    padding: 1.5rem;
+    justify-content: space-around; }
+    body.contact-page main .contact-info .box {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.1rem;
+      padding: 1rem;
+      color: #cacaca;
+      border-bottom: 0.1rem solid transparent;
+      transition: 400ms linear; }
+      body.contact-page main .contact-info .box:hover {
+        border-bottom: 0.1rem solid #e6b31e; }
+      body.contact-page main .contact-info .box .contact-icon {
+        font-size: 3rem; }
+
+body.projects-page main {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  padding: 1rem; }
+  body.projects-page main .projects {
+    padding: 1.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+    body.projects-page main .projects img {
+      width: 270px;
+      height: 155px; }
+    body.projects-page main .projects .box {
+      padding: 1.5rem;
+      margin: 1rem 0; }
+      body.projects-page main .projects .box a {
+        color: #e6b31e; }
+        body.projects-page main .projects .box a:hover {
+          color: #fcfaf1; }
+      body.projects-page main .projects .box span {
+        padding: 0 0.5rem; }
+
+@media only screen and (max-width: 550px) {
+  body.index-page main {
+    text-align: center;
+    padding: 0 1rem; }
+  body.index-page h1, body.index-page h2 {
+    font-size: 1.5rem; }
+  body.index-page button {
+    margin: 0.9rem auto 0.9rem auto; } }
+
+@media only screen and (max-width: 1200px) {
+  body.about-page main {
+    width: 80%; } }
+
+@media only screen and (max-width: 992px) {
+  body.about-page main {
+    width: 90%; }
+    body.about-page main .profile p {
+      font-size: 1.2rem; } }
+
+@media only screen and (max-width: 768px) {
+  body.about-page .profile {
+    flex-direction: column-reverse; }
+    body.about-page .profile p {
+      padding: 2rem 0 0 0; } }
+
+@media only screen and (max-width: 992px) {
+  body.projects-page main {
+    width: 90%; } }
+
+@media only screen and (max-width: 550px) {
+  body.projects-page main {
+    width: 100%;
+    padding: 0; } }
+
+@media only screen and (max-width: 992px) {
+  body.contact-page main {
+    width: 80%; }
+    body.contact-page main .other-ways {
+      -webkit-clip-path: unset;
+      clip-path: unset; } }
+
+@media only screen and (max-width: 768px) {
+  body.contact-page .contact-icon {
+    font-size: 2rem !important; } }
+
+@media only screen and (max-width: 550px) {
+  body.contact-page main {
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+    body.contact-page main .other-ways {
+      width: 90%; }
+    body.contact-page main .contact-info {
+      flex-direction: column; } }
