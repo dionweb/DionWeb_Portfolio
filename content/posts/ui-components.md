@@ -1,33 +1,39 @@
 ---
-title: Ich lerne Deutsch1
+title: UI Components
 date: 2020-01-07
 published: true
-tags: ["Vue.js", "Firebase"]
+tags: ["HTML", "CSS"]
 live: "https://ichlernedeutsch.info/"
-code: https://github.com/dionweb/ich_lerne_deutsch
+code: https://github.com/dionweb/ui-components
 series: false
-cover_image: ./images/mockup70cf5a79.png
+cover_image: ./images/ui-components.png
 canonical_url: false
 description: "Markdown is intended to be as easy-to-read and easy-to-write as is feasible. Readability, however, is emphasized above all else. A Markdown-formatted document should be publishable as-is, as plain text, without looking like it's been marked up with tags or formatting instructions."
 ---
 
-## Description
+# HTML & CSS UI Components
 
-The purpose of the thesis is to create a German language training site. This will be achieved through applications like a translator, dictionary, exercises, and e-book.
+> From design to code
 
-First will be created a Home page with general information about the website. Then a Dictionary page where the user will be able to display the dictionary (words translated from German to Greek) according to the category he wishes with a filtered search. Also, a Translator page where the user can translate a word or a text from German to Greek and vice versa. The translator will be implemented using API. The Contact page will also be created where there will be a contact form connected to the database with validation rules. Finally, will be added an e-book with additional applications.
+A collection with UI components!
 
-To implement the thesis will be used tools and technologies like HTML, CSS, Sass, JSON, JavaScript, Vue JS, VuePress, Firebase Realtime Database, Yandex API and VS Code, Git, GitHub Pages, and Node.js.
+## Design sources
 
-## Author
+[1. Sign Up](https://uidesigndaily.com/posts/figma-sign-up-log-in-authentication-day-1109)
 
-- **Tsentidis Dionysios** - _[DionWeb](http://www.dionweb.me/)_
+[2. Pricing](https://uidesigndaily.com/posts/sketch-price-cards-pricing-dark-theme-day-1165)
 
-## Licence
+[3. Footer](https://uidesigndaily.com/posts/sketch-footer-ui-design-newsletter-links-day-1195)
+
+[4. Testimonials](https://uidesigndaily.com/posts/sketch-testimonials-tesimonials-card-day-1172)
+
+[5. Generate Report](https://www.uidesigndaily.com/posts/sketch-generate-report-checkbox-settings-day-1282)
+
+### License
 
 MIT License
 
-Copyright (c) 2020 Tsentidis Dionysios
+Copyright (c) 2020-2021 DionWeb
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -1,23 +1,38 @@
 ---
-title: Ich lerne Deutsch2
+title: Shell Scripts
 date: 2020-01-27
 published: true
-tags: ["Vue.js", "Firebase"]
-live: "https://ichlernedeutsch.info/"
-code: https://github.com/dionweb/ich_lerne_deutsch
+tags: ["Shell"]
+code: https://github.com/dionweb/Shell-scripts
 series: false
-cover_image: ./images/mockup70cf5a79.png
+cover_image: ./images/shell-scripts.png
 canonical_url: false
 description: "Markdown is intended to be as easy-to-read and easy-to-write as is feasible. Readability, however, is emphasized above all else. A Markdown-formatted document should be publishable as-is, as plain text, without looking like it's been marked up with tags or formatting instructions."
 ---
 
-## Description
+# Shell-scripts
 
-The purpose of the thesis is to create a German language training site. This will be achieved through applications like a translator, dictionary, exercises, and e-book.
+Custom scripts collection 
 
-First will be created a Home page with general information about the website. Then a Dictionary page where the user will be able to display the dictionary (words translated from German to Greek) according to the category he wishes with a filtered search. Also, a Translator page where the user can translate a word or a text from German to Greek and vice versa. The translator will be implemented using API. The Contact page will also be created where there will be a contact form connected to the database with validation rules. Finally, will be added an e-book with additional applications.
+### CleanArch .sh
 
-To implement the thesis will be used tools and technologies like HTML, CSS, Sass, JSON, JavaScript, Vue JS, VuePress, Firebase Realtime Database, Yandex API and VS Code, Git, GitHub Pages, and Node.js.
+After upgrading ArchLinux you may now have unwanted .pkg from the system and packages that are no longer needed or that are no longer in the official repositories. I created this script to maintain my system. It cleans pkg cache, home cache and unused/orphan packages. Works only with Arch or Arch based distros.
+
+### Deploy .sh
+
+Script to deploy repository on github.
+
+### DisableTracker .sh
+
+GNOME's tracker is a CPU and privacy hog. This script disables the tracker
+
+### Dotfiles .sh
+
+Dotfiles. sh installs my [.dotfiles](https://github.com/dionweb/Dotfiles). Used to install .dotfiles on other systems.
+
+### PacmanQuiz .sh
+
+Pacman knowledge mini-quiz created for fun.
 
 ## Author
 

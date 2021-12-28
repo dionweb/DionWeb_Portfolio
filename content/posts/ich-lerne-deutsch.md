@@ -1,12 +1,12 @@
 ---
-title: Ich lerne Deutsch3
+title: Ich lerne Deutsch
 date: 2020-01-17
 published: true
 tags: ["Vue.js", "Firebase"]
 live: "https://ichlernedeutsch.info/"
 code: https://github.com/dionweb/ich_lerne_deutsch
 series: false
-cover_image: ./images/mockup70cf5a79.png
+cover_image: ./images/ich-lerne-deutsch.png
 canonical_url: false
 description: "Markdown is intended to be as easy-to-read and easy-to-write as is feasible. Readability, however, is emphasized above all else. A Markdown-formatted document should be publishable as-is, as plain text, without looking like it's been marked up with tags or formatting instructions."
 ---
