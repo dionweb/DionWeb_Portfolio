@@ -35,7 +35,10 @@
           </p>
         </div>
         <div class="profile-image">
-          <g-image alt="Example image" src="~/assets/images/5-25_ppp.jpg" />
+          <g-image
+            alt="Example image"
+            src="~/assets/images/undraw_updated_resume_re_q1or.svg"
+          />
         </div>
       </div>
       <Timeline />
