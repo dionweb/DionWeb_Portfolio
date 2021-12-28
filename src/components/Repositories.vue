@@ -14,7 +14,10 @@
       <tbody class="text-small mono">
         <tr v-for="edge in $static.allRepos.edges" :key="edge.node.name">
           <td v-html="edge.node.name"></td>
-          <td v-if="edge.node.description.length > 0" v-html="edge.node.description"></td>
+          <td
+            v-if="edge.node.description.length > 0"
+            v-html="edge.node.description"
+          ></td>
           <td v-else>Beschreibung ist nicht verfügbar.</td>
           <td>#{{ edge.node.language }}</td>
           <td>
@@ -75,7 +78,8 @@
         class="button button-primary"
         href="https://github.com/dionweb?tab=repositories"
         target="_blank"
-      >Zeige alles</a>
+        >Zeige alles</a
+      >
     </div>
   </div>
 </template>
@@ -179,6 +183,9 @@ table {
     tbody tr th,
     tbody tr td {
       padding: 10px 5px;
+    }
+    tbody tr td:nth-child(2) {
+      display: none;
     }
   }
 }
