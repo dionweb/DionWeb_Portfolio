@@ -24,6 +24,13 @@ export default {
     return {
       timeline: [
         {
+          title: "Produktionshelfer",
+          year: "04/2021 – heute",
+          rel: "Daimler AG",
+          description: "Produktionshelfer in Mercedes Werk Mettingen",
+          class: "work",
+        },
+        {
           title: "Informatik-Ingenieurwesen (B.Sc.)",
           year: "09/2013 – 03/2020",
           rel: "Universität Thessalien",
@@ -56,7 +63,7 @@ export default {
   &:after {
     content: "";
     position: absolute;
-    width: 3px;
+    width: 2px;
     background-color: var(--prim-color);
     top: 0;
     bottom: 0;
@@ -73,9 +80,9 @@ export default {
       position: absolute;
       width: 25px;
       height: 25px;
-      right: -17px;
+      right: -14px;
       background-color: var(--bg-color);
-      border: 4px solid var(--prim-color);
+      border: 2px solid var(--prim-color);
       top: 49px;
       border-radius: 50%;
       z-index: 1;
@@ -112,7 +119,7 @@ export default {
           transparent;
       }
       &:after {
-        left: -16px;
+        left: -15px;
       }
     }
     &.education::after {
@@ -175,7 +182,7 @@ export default {
   }
   .container:nth-child(even)::after,
   .container:nth-child(odd)::after {
-    left: 15px;
+    left: 16.5px;
   }
 
   .container:nth-child(odd)::before {
@@ -192,7 +199,7 @@ export default {
     left: 0;
   }
   .timeline .container:nth-child(2n)::after {
-    left: 16px;
+    left: 16.5px;
   }
   .timeline .container:nth-child(2n)::before {
     left: 50px;
