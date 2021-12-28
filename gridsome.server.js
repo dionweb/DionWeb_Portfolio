@@ -5,12 +5,24 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
-module.exports = function (api) {
-  api.loadSource(({ addCollection }) => {
-    // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
-  })
+const axios = require("axios");
 
-  api.createPages(({ createPage }) => {
-    // Use the Pages API here: https://gridsome.org/docs/pages-api/
-  })
-}
+module.exports = function (api) {
+  api.loadSource(async (actions) => {
+    const { data } = await axios.get(process.env.GITHUB_API_URL);
+    const collection = actions.addCollection({
+      typeName: "Repos",
+    });
+
+    for (const item of data) {
+      collection.addNode({
+        name: item.name,
+        description: item.description,
+        homepage: item.homepage,
+        html_url: item.html_url,
+        language: item.language,
+        updated_at: item.updated_at,
+      });
+    }
+  });
+};
