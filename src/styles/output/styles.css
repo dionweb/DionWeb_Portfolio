@@ -914,14 +914,12 @@ table tbody tr .links svg {
 }
 
 @media screen and (max-width: 600px) {
-  .fields,
-  .errors {
+  .fields {
     width: 100%;
   }
   .fields input,
   .fields textarea {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+    border-radius: 0;
   }
 }
 .container-test {
