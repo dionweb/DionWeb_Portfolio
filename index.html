@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Welcome to my personal Portfolio!" />
+    <meta
+      name="keywords"
+      content="DionWeb, Dionysios Tsentidis, Personal Website, Portfolio"
+    />
+    <meta name="author" content="Dionysios Tsentidis" />
+    <title>DionWeb</title>
+    <link rel="stylesheet" href="src/styles/output/styles.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <strong>
+        <a href="/">DionWeb</a>
+      </strong>
+      <!-- <nav class="nav" v-if="showNav">
+        <a class="nav__link" href="/#about">Über mich</a>
+        <a class="nav__link" href="/#projects">Projekte</a>
+        <a class="nav__link" href="/#contact">Kontakt</a>
+      </nav> -->
+      <div class="nav-icons">
+        <a href="https://github.com/dionweb" target="_blank">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-github"
+          >
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+            />
+          </svg>
+        </a>
+      </div>
+    </header>
+    <!-- MAIN -->
+    <main>
+      <!-- SECTION SHOWCASE -->
+      <section id="showcase">
+        <div class="intro">
+          <h3>Hallo, mein Name ist</h3>
+          <h1>Dionysios Tsentidis.</h1>
+          <!-- <p>Explore the website and learn more about me!</p> -->
+          <div class="navigate-buttons">
+            <a class="button button-primary-outline" href="#about">Über mich</a>
+            <a class="button button-secondary" href="#projects">Projekte</a>
+          </div>
+        </div>
+        <!-- WAVES CONTAINER-->
+        <div class="waves-container">
+          <svg
+            class="waves"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28"
+            preserveAspectRatio="none"
+            shape-rendering="auto"
+          >
+            <defs>
+              <path
+                id="gentle-wave"
+                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+              />
+            </defs>
+            <g class="parallax">
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="0"
+                fill="rgba(21,150,234,0.7)"
+              />
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="3"
+                fill="rgba(21,150,234,0.5)"
+              />
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="5"
+                fill="rgba(21,150,234,0.3)"
+              />
+              <use xlink:href="#gentle-wave" x="48" y="7" fill="#fafafa" />
+            </g>
+          </svg>
+        </div>
+        <!-- WAVES END -->
+      </section>
+      <!-- SECTION ABOUT -->
+      <section id="about" class="space-top-x2 space-bottom-x2">
+        <h2 class="space-bottom">Über mich</h2>
+        <div class="about-wrapper content-box space-bottom-x2">
+          <div class="personal-info">
+            <p>
+              Hallo, ich heiße Dionysios Tsentidis und ich bin 27 Jahre alt. Ich
+              wurde in Griechenland geboren und ich lebe in Deutschland.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint
+              nihil suscipit provident unde quis officiis earum repudiandae
+              possimus expedita ea asperiores saepe voluptatum et ab, est sit
+              voluptate necessitatibus placeat?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint
+              nihil suscipit provident unde quis officiis earum repudiandae
+              possimus expedita ea asperiores saepe voluptatum et ab, est sit
+              voluptate necessitatibus placeat?
+            </p>
+          </div>
+          <div class="profile-image">
+            <img
+              src="src/images/undraw_updated_resume_re_q1or.svg"
+              alt="Profile image"
+            />
+          </div>
+        </div>
+        <div class="timeline">
+          <div class="container work">
+            <div class="content">
+              <h5>
+                Produktionshelfer
+                <span class="year text-xSmall">04/2021 – heute</span>
+              </h5>
+              <h6 class="mono">Daimler AG</h6>
+              <p>Produktionshelfer in Mercedes Werk Mettingen</p>
+            </div>
+          </div>
+          <div class="container education">
+            <div class="content">
+              <h5>
+                Informatik-Ingenieurwesen (B.Sc.)
+                <span class="year text-xSmall">09/2013 – 03/2020</span>
+              </h5>
+              <h6 class="mono">Universität Thessalien</h6>
+              <p>Spezialisierung: Softwaretechnik</p>
+            </div>
+          </div>
+          <div class="container work">
+            <div class="content">
+              <h5>
+                Praktikum im Bereich Softwareentwicklung
+                <span class="year text-xSmall">04/2019 – 09/2019</span>
+              </h5>
+              <h6 class="mono">DEYAK, Katerini</h6>
+              <p>Datenbank-Management und Webentwicklung</p>
+            </div>
+          </div>
+          <div class="container education">
+            <div class="content">
+              <h5>
+                Einheitliches Lyzeum
+                <span class="year text-xSmall">09/2010 – 03/2013</span>
+              </h5>
+              <h6 class="mono">Schulabschluss</h6>
+              <p>Allgemeine Hochschulreife</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION PROJECTS -->
+      <section id="projects" class="space-bottom-x2">
+        <h2 class="space-bottom">Projekte</h2>
+        <div>
+          <h3 class="space-bottom">Zuletzt aktualisierte Projekte</h3>
+          <table>
+            <thead class="text-small">
+              <tr>
+                <th>Name</th>
+                <th>Updated</th>
+                <th>Language</th>
+                <th>Links</th>
+              </tr>
+            </thead>
+            <tbody class="text-small mono" id="toAppend"></tbody>
+          </table>
+          <div class="repos-btn text-center">
+            <a
+              class="button button-primary"
+              href="https://github.com/dionweb?tab=repositories"
+              target="_blank"
+              >Zeige alles</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- SECTION CONTACT -->
+      <section id="contact">
+        <div class="form">
+          <h3 class="text-center">Kontaktformular</h3>
+          <p class="text-center space-bottom">
+            Möchten Sie mit mir in Kontakt treten? Ich freue mich über Ihre
+            Nachricht.
+          </p>
+
+          <form>
+            <div class="fields">
+              <div class="name half">
+                <input
+                  id="name"
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  required
+                />
+              </div>
+              <div class="email half">
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <div class="message full">
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="8"
+                  placeholder="Nachricht"
+                  required
+                ></textarea>
+              </div>
+              <div class="submit text-center full">
+                <button type="submit" class="button button-primary">
+                  Absenden
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <p>
+        Entworfen und entwickelt von
+        <a href="https://dionweb.me">DionWeb</a>
+      </p>
+      <a href="https://github.com/dionweb" target="_blank">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-github"
+        >
+          <path
+            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+          />
+        </svg>
+      </a>
+    </footer>
+    <script src="src/scripts/main.js"></script>
+  </body>
+</html>

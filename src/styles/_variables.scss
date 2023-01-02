@@ -1,0 +1,54 @@
+// Default variables
+html {
+  --base-font-size: 18px;
+}
+
+// Light default theme
+body {
+  --base-font-family: "Quicksand", sans-serif;
+  --mono-font-family: "Fira Mono", monospace;
+  /* --bg-color: #E8E5E8; */
+  --bg-color: #fafafa;
+  --bg-content-color: #f5f2f0;
+  --bg-input-color: rgba(245, 242, 240, 0.6);
+  --bg-code: #fffbf3;
+  --bg-project-color: rgba(245, 242, 240, 0.4);
+  --body-color: #1c2a41;
+  --title-color: #0d131c;
+  --link-color: #6b17e6;
+  --border-color: rgba(0, 0, 0, 0.1);
+  --prim-color: #1596ea;
+  --prim-color-darken: #117fc6;
+  --sec-color: #f1b441;
+  --sec-color-darken: #eda316;
+  --space: 3.5rem;
+  --content-width: 860px;
+  --header-height: 80px;
+  --radius: 8px;
+}
+
+// Make  things smaller for mobile
+@media screen and (max-width: 650px) {
+  html {
+    --base-font-size: 16px;
+  }
+
+  body {
+    --space: 2rem;
+    --header-height: 60px;
+  }
+}
+
+// Override variables for Dark theme
+/* body[data-theme="dark"] {
+  --bg-color: #1c2b41;
+  --bg-color: #12253b;
+  --bg-content-color: #0d1e32;
+  --bg-input-color: #0d1e32;
+  --bg-code: rgba(0, 0, 0, 0.3);
+  --bg-project-color: rgba(13, 30, 50, 0.6);
+  --border-color: rgba(255, 255, 255, 0.1);
+  --body-color: #e8e5e8;
+  --title-color: #fff;
+  --link-color: #af9cef;
+} */
