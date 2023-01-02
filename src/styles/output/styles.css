@@ -294,6 +294,7 @@ section h2::before {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -865,23 +866,6 @@ table tbody tr .links svg {
     display: none;
   }
 }
-.errors {
-  width: 80%;
-  margin: auto;
-}
-.errors ul {
-  margin-left: 0;
-  list-style: none;
-}
-.errors ul svg {
-  position: relative;
-  top: 6px;
-  margin-right: 0.4em;
-}
-.errors ul svg.feather {
-  color: var(--sec-color);
-}
-
 .fields {
   display: flex;
   flex-wrap: wrap;
@@ -933,6 +917,11 @@ table tbody tr .links svg {
   .fields,
   .errors {
     width: 100%;
+  }
+  .fields input,
+  .fields textarea {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 }
 .container-test {

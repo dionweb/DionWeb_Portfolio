@@ -369,23 +369,6 @@ table {
 
 // SECTION - CONTACT
 
-.errors {
-  width: 80%;
-  margin: auto;
-  ul {
-    margin-left: 0;
-    list-style: none;
-    svg {
-      position: relative;
-      top: 6px;
-      margin-right: 0.4em;
-      &.feather {
-        color: var(--sec-color);
-      }
-    }
-  }
-}
-
 .fields {
   display: flex;
   flex-wrap: wrap;
@@ -438,6 +421,11 @@ table {
   .fields,
   .errors {
     width: 100%;
+  }
+  .fields input,
+  .fields textarea {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 }
 
