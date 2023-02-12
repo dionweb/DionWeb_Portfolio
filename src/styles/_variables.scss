@@ -3,7 +3,6 @@ html {
   --base-font-size: 18px;
 }
 
-// Light default theme
 body {
   --base-font-family: "Quicksand", sans-serif;
   --mono-font-family: "Fira Mono", monospace;
@@ -27,18 +26,6 @@ body {
   --radius: 8px;
 }
 
-// Make  things smaller for mobile
-@media screen and (max-width: 650px) {
-  html {
-    --base-font-size: 16px;
-  }
-
-  body {
-    --space: 2rem;
-    --header-height: 60px;
-  }
-}
-
 // Override variables for Dark theme
 /* body[data-theme="dark"] {
   --bg-color: #1c2b41;
@@ -52,3 +39,15 @@ body {
   --title-color: #fff;
   --link-color: #af9cef;
 } */
+
+// Make  things smaller for mobile
+@media screen and (max-width: 650px) {
+  html {
+    --base-font-size: 16px;
+  }
+
+  body {
+    --space: 2rem;
+    --header-height: 60px;
+  }
+}

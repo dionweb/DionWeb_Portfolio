@@ -162,15 +162,6 @@ body {
   --radius: 8px;
 }
 
-@media screen and (max-width: 650px) {
-  html {
-    --base-font-size: 16px;
-  }
-  body {
-    --space: 2rem;
-    --header-height: 60px;
-  }
-}
 /* body[data-theme="dark"] {
   --bg-color: #1c2b41;
   --bg-color: #12253b;
@@ -183,6 +174,15 @@ body {
   --title-color: #fff;
   --link-color: #af9cef;
 } */
+@media screen and (max-width: 650px) {
+  html {
+    --base-font-size: 16px;
+  }
+  body {
+    --space: 2rem;
+    --header-height: 60px;
+  }
+}
 html {
   font-size: var(--base-font-size);
 }
