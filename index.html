@@ -208,7 +208,7 @@
             Nachricht.
           </p>
 
-          <form>
+          <form name="contact" method="POST" netlify>
             <div class="fields">
               <div class="name half">
                 <input
@@ -243,6 +243,7 @@
                   Absenden
                 </button>
               </div>
+              <input type="hidden" name="form-name" value="contact" />
             </div>
           </form>
         </div>
