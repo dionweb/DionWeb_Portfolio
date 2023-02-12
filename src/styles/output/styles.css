@@ -135,22 +135,13 @@ table {
   border-spacing: 0;
 }
 
-html {
+* {
   --base-font-size: 18px;
+  --base-font-family: "Quicksand", sans-serif;
+  --mono-font-family: "Fira Mono", monospace;
 }
 
 body {
-  --base-font-family: "Quicksand", sans-serif;
-  --mono-font-family: "Fira Mono", monospace;
-  /* --bg-color: #E8E5E8; */
-  --bg-color: #fafafa;
-  --bg-content-color: #f5f2f0;
-  --bg-input-color: rgba(245, 242, 240, 0.6);
-  --bg-code: #fffbf3;
-  --bg-project-color: rgba(245, 242, 240, 0.4);
-  --body-color: #1c2a41;
-  --title-color: #0d131c;
-  --link-color: #6b17e6;
   --border-color: rgba(0, 0, 0, 0.1);
   --prim-color: #1596ea;
   --prim-color-darken: #117fc6;
@@ -162,7 +153,19 @@ body {
   --radius: 8px;
 }
 
-/* body[data-theme="dark"] {
+body {
+  /* --bg-color: #E8E5E8; */
+  --bg-color: #fafafa;
+  --bg-content-color: #f5f2f0;
+  --bg-input-color: rgba(245, 242, 240, 0.6);
+  --bg-code: #fffbf3;
+  --bg-project-color: rgba(245, 242, 240, 0.4);
+  --body-color: #1c2a41;
+  --title-color: #0d131c;
+  --link-color: #6b17e6;
+}
+
+body.dark-theme {
   --bg-color: #1c2b41;
   --bg-color: #12253b;
   --bg-content-color: #0d1e32;
@@ -173,7 +176,34 @@ body {
   --body-color: #e8e5e8;
   --title-color: #fff;
   --link-color: #af9cef;
-} */
+}
+
+@media (prefers-color-scheme: light) {
+  /* defaults to dark theme */
+  body {
+    /* --bg-color: #E8E5E8; */
+    --bg-color: #fafafa;
+    --bg-content-color: #f5f2f0;
+    --bg-input-color: rgba(245, 242, 240, 0.6);
+    --bg-code: #fffbf3;
+    --bg-project-color: rgba(245, 242, 240, 0.4);
+    --body-color: #1c2a41;
+    --title-color: #0d131c;
+    --link-color: #6b17e6;
+  }
+  body.dark-theme {
+    --bg-color: #1c2b41;
+    --bg-color: #12253b;
+    --bg-content-color: #0d1e32;
+    --bg-input-color: #0d1e32;
+    --bg-code: rgba(0, 0, 0, 0.3);
+    --bg-project-color: rgba(13, 30, 50, 0.6);
+    --border-color: rgba(255, 255, 255, 0.1);
+    --body-color: #e8e5e8;
+    --title-color: #fff;
+    --link-color: #af9cef;
+  }
+}
 @media screen and (max-width: 650px) {
   html {
     --base-font-size: 16px;
@@ -327,8 +357,9 @@ body .header {
 }
 body .header a {
   color: var(--body-color);
+  cursor: pointer;
 }
-body .header a.nav__link {
+body .header a.nav_link {
   margin: 0 10px;
 }
 body footer {

@@ -1,29 +1,4 @@
-// fetch("https://api.github.com/users/dionweb/repos")
-
-// fetch("https://api.github.com/users/dionweb/repos?per_page=5&sort=pushed")
-//   .then((response) => {
-//     if (response.ok) {
-//       return response.json();
-//     } else {
-//       throw new Error("NETWORK RESPONSE ERROR");
-//     }
-//   })
-//   .then((data) => {
-//     console.log(data);
-//     displayRepo(data);
-//   })
-//   .catch((error) => console.error("FETCH ERROR:", error));
-
-// function displayRepo(data) {
-//   const repo = data[0];
-//   const repoDiv = document.getElementById("repo");
-
-//   const repoName = repo.name;
-//   const heading = document.createElement("h1");
-//   heading.innerHTML = repoName;
-//   repoDiv.appendChild(heading);
-// }
-
+// FETCH REPOS
 const fetchData = async () =>
   (
     await fetch(
@@ -85,6 +60,8 @@ fetchData().then((data) => {
   }
 });
 
+// NETLIFY FORM
+
 const handleSubmit = (event) => {
   event.preventDefault();
 
@@ -101,3 +78,30 @@ const handleSubmit = (event) => {
 };
 
 document.querySelector("form").addEventListener("submit", handleSubmit);
+
+// LIGHT - DARK THEME
+
+const btn = document.querySelector(".theme-switch");
+const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: light)");
+
+const currentTheme = localStorage.getItem("theme");
+if (currentTheme == "dark") {
+  document.body.classList.toggle("dark-theme");
+} else if (currentTheme == "light") {
+  document.body.classList.toggle("light-theme");
+}
+
+btn.addEventListener("click", function () {
+  if (prefersDarkScheme.matches) {
+    document.body.classList.toggle("light-theme");
+    var theme = document.body.classList.contains("light-theme")
+      ? "light"
+      : "dark";
+  } else {
+    document.body.classList.toggle("dark-theme");
+    var theme = document.body.classList.contains("dark-theme")
+      ? "dark"
+      : "light";
+  }
+  localStorage.setItem("theme", theme);
+});

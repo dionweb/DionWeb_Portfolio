@@ -38,7 +38,8 @@ body {
     z-index: 99;
     a {
       color: var(--body-color);
-      &.nav__link {
+      cursor: pointer;
+      &.nav_link {
         margin: 0 10px;
       }
     }
