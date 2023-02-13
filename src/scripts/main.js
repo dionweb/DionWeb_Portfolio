@@ -95,13 +95,13 @@ btn.addEventListener("click", function () {
   if (prefersLightScheme.matches) {
     document.body.classList.toggle("dark-theme");
     var theme = document.body.classList.contains("dark-theme")
-      ? "light"
-      : "dark";
-  } else {
-    document.body.classList.toggle("dark-theme");
-    var theme = document.body.classList.contains("dark-theme")
       ? "dark"
       : "light";
+  } else {
+    document.body.classList.toggle("light-theme");
+    var theme = document.body.classList.contains("light-theme")
+      ? "light"
+      : "dark";
   }
   localStorage.setItem("theme", theme);
 });
