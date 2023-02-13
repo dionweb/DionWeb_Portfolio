@@ -82,7 +82,7 @@ document.querySelector("form").addEventListener("submit", handleSubmit);
 // LIGHT - DARK THEME
 
 const btn = document.querySelector(".theme-switch");
-const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: light)");
+const prefersLightScheme = window.matchMedia("(prefers-color-scheme: light)");
 
 const currentTheme = localStorage.getItem("theme");
 if (currentTheme == "dark") {
@@ -92,9 +92,9 @@ if (currentTheme == "dark") {
 }
 
 btn.addEventListener("click", function () {
-  if (prefersDarkScheme.matches) {
-    document.body.classList.toggle("light-theme");
-    var theme = document.body.classList.contains("light-theme")
+  if (prefersLightScheme.matches) {
+    document.body.classList.toggle("dark-theme");
+    var theme = document.body.classList.contains("dark-theme")
       ? "light"
       : "dark";
   } else {
