@@ -170,7 +170,7 @@ body.light-theme {
   --link-color: #6b17e6;
 }
 
-body.dark-theme {
+body {
   --bg-color: #1c2b41;
   --bg-color: #12253b;
   --bg-content-color: #0d1e32;
@@ -184,8 +184,7 @@ body.dark-theme {
 }
 
 @media (prefers-color-scheme: light) {
-  /* defaults to dark theme */
-  body {
+  body.light-theme {
     /* --bg-color: #E8E5E8; */
     --bg-color: #fafafa;
     --bg-content-color: #f5f2f0;
