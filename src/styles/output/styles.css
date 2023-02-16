@@ -184,7 +184,7 @@ body {
 }
 
 @media (prefers-color-scheme: light) {
-  body.light-theme {
+  body {
     /* --bg-color: #E8E5E8; */
     --bg-color: #fafafa;
     --bg-content-color: #f5f2f0;
