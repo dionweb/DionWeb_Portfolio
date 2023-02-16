@@ -7,29 +7,18 @@
     <title>DionWeb Test page</title>
     <link rel="stylesheet" href="src/styles/output/styles.css" />
   </head>
-  <body>
+  <body id="bodyy">
     <header class="header">
       <strong>
-        <a href="/">DionWeb</a>
+        <a class="nav-item" href="/">DionWeb</a>
       </strong>
-      <div class="nav-icons">
-        <a href="https://github.com/dionweb" target="_blank">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="feather feather-github"
-          >
-            <path
-              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-            />
-          </svg>
+      <div class="mono text-small">
+        <button class="theme-switch nav-item">Theme schalten</button>
+        <button id="decreaseText" class="nav-item">A-</button>
+        <button id="defaultText" class="nav-item">A</button>
+        <button id="increaseText" class="nav-item">A+</button>
+        <a class="nav-item" href="https://github.com/dionweb" target="_blank">
+          /Github
         </a>
       </div>
     </header>
@@ -37,10 +26,10 @@
       <div class="container-test text-center">
         <div class="space-bottom-x2">
           <h1 class="big space-bottom">Buttons</h1>
-          <a href class="button button-primary">Button</a>
-          <a href class="button button-secondary">Button</a>
-          <a href class="button button-primary-outline">Button</a>
-          <a href class="button button-secondary-outline">Button</a>
+          <a href class="button button-primary">Primary</a>
+          <a href class="button button-secondary">Secondary</a>
+          <a href class="button button-primary-outline">Primary outline</a>
+          <a href class="button button-secondary-outline">Secondary outline</a>
         </div>
         <div class="space-bottom-x2">
           <h1 class="big space-bottom">Headings</h1>
@@ -62,6 +51,6 @@
         </div>
       </div>
     </main>
-    <script src="src/scripts/main.js"></script>
+    <script src="src/scripts/test.js"></script>
   </body>
 </html>
