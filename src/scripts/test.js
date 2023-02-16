@@ -30,25 +30,31 @@ btn.addEventListener("click", function () {
 var html = document.documentElement;
 var fontSize = "18";
 
+const fontSizeNow = document.getElementById("fontSizeNow");
+fontSizeNow.innerHTML = fontSize + "px";
+
 const decreaseText = document.getElementById("decreaseText");
-const increaseText = document.getElementById("increaseText");
 const defaultText = document.getElementById("defaultText");
+const increaseText = document.getElementById("increaseText");
 
 decreaseText.addEventListener("click", function () {
-  fontSize--;
   if (fontSize > 13) {
+    fontSize--;
     html.style.fontSize = fontSize + "px";
   }
-});
-
-increaseText.addEventListener("click", function () {
-  fontSize++;
-  if (fontSize < 25) {
-    html.style.fontSize = fontSize + "px";
-  }
+  fontSizeNow.innerHTML = fontSize + "px";
 });
 
 defaultText.addEventListener("click", function () {
   fontSize = "18";
   html.style.fontSize = fontSize + "px";
+  fontSizeNow.innerHTML = fontSize + "px";
+});
+
+increaseText.addEventListener("click", function () {
+  if (fontSize < 25) {
+    fontSize++;
+    html.style.fontSize = fontSize + "px";
+  }
+  fontSizeNow.innerHTML = fontSize + "px";
 });
