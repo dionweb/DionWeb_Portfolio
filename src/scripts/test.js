@@ -28,7 +28,15 @@ btn.addEventListener("click", function () {
 // CHANGE TEXT SIZE
 
 var html = document.documentElement;
-var fontSize = "18";
+
+var smallScreen = window.matchMedia("(max-width: 650px)");
+if (smallScreen.matches) {
+  var fontSize = "16";
+  console.log(fontSize);
+} else {
+  var fontSize = "18";
+  console.log(fontSize);
+}
 
 const fontSizeNow = document.getElementById("fontSizeNow");
 fontSizeNow.innerHTML = fontSize + "px";
@@ -38,23 +46,26 @@ const defaultText = document.getElementById("defaultText");
 const increaseText = document.getElementById("increaseText");
 
 decreaseText.addEventListener("click", function () {
-  if (fontSize > 13) {
+  if (fontSize > 14) {
     fontSize--;
     html.style.fontSize = fontSize + "px";
+    fontSizeNow.innerHTML = fontSize + "px";
+    window.localStorage.setItem("font", fontSize + "px");
   }
-  fontSizeNow.innerHTML = fontSize + "px";
 });
 
 defaultText.addEventListener("click", function () {
   fontSize = "18";
   html.style.fontSize = fontSize + "px";
   fontSizeNow.innerHTML = fontSize + "px";
+  window.localStorage.setItem("font", fontSize + "px");
 });
 
 increaseText.addEventListener("click", function () {
-  if (fontSize < 25) {
+  if (fontSize < 22) {
     fontSize++;
     html.style.fontSize = fontSize + "px";
+    fontSizeNow.innerHTML = fontSize + "px";
+    window.localStorage.setItem("font", fontSize + "px");
   }
-  fontSizeNow.innerHTML = fontSize + "px";
 });

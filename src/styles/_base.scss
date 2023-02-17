@@ -36,11 +36,11 @@ body {
     height: 80px;
     position: relative;
     z-index: 99;
-    .nav-item {
-      color: var(--body-color);
-      cursor: pointer;
-      margin: 0 10px;
-    }
+  }
+  .nav-item {
+    color: var(--body-color);
+    cursor: pointer;
+    margin: 0 10px;
   }
   footer {
     height: 170px;

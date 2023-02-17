@@ -359,7 +359,7 @@ body .header {
   position: relative;
   z-index: 99;
 }
-body .header .nav-item {
+body .nav-item {
   color: var(--body-color);
   cursor: pointer;
   margin: 0 10px;
