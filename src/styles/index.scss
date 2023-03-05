@@ -207,6 +207,7 @@ section#about {
       background-position-y: 3px;
     }
     .content {
+      overflow: auto;
       padding: 20px 30px;
       background-color: var(--bg-content-color);
       position: relative;

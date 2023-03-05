@@ -751,6 +751,7 @@ section#about .about-wrapper .profile-image img:hover {
   background-position-y: 3px;
 }
 .timeline .container .content {
+  overflow: auto;
   padding: 20px 30px;
   background-color: var(--bg-content-color);
   position: relative;
